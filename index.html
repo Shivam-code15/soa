@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-    <title>Stage of Art - Explore Creativity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Stage of Art</title>
     <style>
         body, html {
             height: 100%;
             margin: 0;
+            padding: 0;
+            background-color: #0A0A0A;
+            color: #E0E0E0;
+            font-family: 'Arial', sans-serif;
         }
         .slider {
             position: relative;
@@ -26,26 +30,29 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: #FFF;
         }
         .header-content img {
-            max-width: 120px; /* Adjust based on your logo's size */
+            max-width: 120px; /* Adjust as needed */
         }
         .header-content p {
-            margin-top: 20px;
             font-size: 20px;
+            margin-top: 20px;
         }
         .cta-button {
-            margin-top: 30px;
-            padding: 10px 20px;
-            background: #32CD32;
+            display: inline-block;
+            background-color: #32CD32;
             color: #0A0A0A;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
             font-size: 18px;
+            box-shadow: 0 2px 4px rgba(0, 255, 255, 0.2);
+            transition: background-color 0.3s, color 0.3s;
         }
-        /* Add additional styles for the rest of your page */
+        .cta-button:hover {
+            background-color: #7CFC00;
+            color: #0A0A0A;
+        }
     </style>
 </head>
 <body>
@@ -58,21 +65,9 @@
     <div class="header-content">
         <img src="logo.png" alt="Stage of Art Logo">
         <p>Unleash your creativity and connect with artists worldwide.</p>
-        <button class="cta-button" onclick="scrollToContent()">Explore</button>
+        <a href="content.html" class="cta-button">Explore</a>
     </div>
 </div>
-
-<!-- Your page content goes here -->
-
-<script>
-    function scrollToContent() {
-        // Scrolls to the beginning of the page or a specific section
-        window.scrollTo({
-            top: 0, // Adjust this value if you're targeting a specific section
-            behavior: 'smooth'
-        });
-    }
-</script>
 
 </body>
 </html>
