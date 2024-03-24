@@ -1,22 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav ul li a");
+document.addEventListener('DOMContentLoaded', function() {
+    const videoSlider = document.getElementById('videoSlider');
 
-    window.onscroll = () => {
-        let current = "";
-
-        sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 60) {
-                current = section.getAttribute("id");
-            }
-        });
-
-        navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") == "#" + current) {
-                link.classList.add("active");
-            }
-        });
-    };
+    videoSlider.addEventListener('click', function() {
+        const categoriesSection = document.getElementById('categories');
+        categoriesSection.scrollIntoView({ behavior: 'smooth' });
+    });
 });
+
