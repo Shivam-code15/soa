@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artists' Collective</title>
+    <title>Artistic Fusion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Artistic Fusion Logo" class="logo">
+            <p class="tagline">Where Art Forms Converge</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,24 +23,31 @@
     </header>
     
     <section id="home" class="slider">
-        <video src="stage-of-art.mp4" autoplay muted loop></video>
-        <button class="cta-button">Stage of Art</button>
+        <a href="#categories">
+            <video src="stage-of-art.mp4" autoplay muted loop></video>
+        </a>
+    </section>
+
+    <section id="categories" class="category-section">
+        <div class="category" style="background-image: url('dance.jpg');">
+            <p class="category-title">Dancing</p>
+        </div>
+        <div class="category" style="background-image: url('music.jpg');">
+            <p class="category-title">Music</p>
+        </div>
+        <!-- Add more categories similarly -->
     </section>
 
     <section id="about">
-        <!-- About content here -->
-    </section>
-
-    <section id="categories">
-        <!-- Categories content here -->
+        <!-- About content -->
     </section>
 
     <section id="contact">
-        <!-- Contact form here -->
+        <!-- Contact form -->
     </section>
 
     <footer>
-        <!-- Footer content here -->
+        <!-- Footer content -->
     </footer>
 
     <script src="script.js"></script>
