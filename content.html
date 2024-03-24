@@ -15,6 +15,11 @@
             background-size: cover;
             background-position: center; 
         }
+        header {
+            background-color: rgba(10, 10, 10, 0.85);
+            padding: 20px 0;
+            text-align: center;
+        }
         .hero { 
             text-align: center; 
             padding: 60px 20px; 
@@ -26,15 +31,12 @@
             text-align: center; 
             padding: 40px 20px; 
             background-color: rgba(15, 15, 15, 0.85);
-            max-width: 100%; /* Ensures the image is never wider than its container */
-    height: auto; /* Maintains the aspect ratio of the image */
-    display: block; /* Prevents inline default behavior, enabling margin auto to work */
-    margin: 0 auto; /* Centers the image horizontally within its container */
-    border-radius: 8px; /* Maintains the rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2); /* Keeps the shadow effect */;
+            margin: 0 auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
         }
         .cta { 
-            background-color: #32CD32; /* Vibrant green for a dynamic look */
+            background-color: #32CD32; 
             color: #0A0A0A; 
             padding: 12px 25px; 
             text-decoration: none; 
@@ -44,7 +46,7 @@
             transition: background-color 0.3s, color 0.3s;
         }
         .cta:hover {
-            background-color: #7CFC00; /* Lighter green for hover effect */
+            background-color: #7CFC00; 
             color: #0A0A0A;
         }
         footer { 
@@ -61,14 +63,20 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
         }
-        h1, h2 { font-family: 'Arial', sans-serif; color: #00FA9A; /* Soft neon green for headings */ }
-        p { font-size: 18px; color: #E0E0E0; }
+        h1, h2 { 
+            color: #00FA9A; 
+        }
+        p { 
+            font-size: 18px; 
+        }
     </style>
 </head>
 <body>
-<div class="logo-container">
+
+    <header>
         <img src="your-logo.webp" alt="Stage of Art Logo" style="max-width: 120px; height: auto;">
-    </div>
+    </header>
+
     <div class="hero">
         <h1>Unleash Your Creativity on the Stage of Art</h1>
         <p>Connect, collaborate, and showcase your art like never before.</p>
@@ -90,3 +98,4 @@
 
 </body>
 </html>
+
